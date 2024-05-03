@@ -158,7 +158,7 @@ let asking_question10 = await inquirer.prompt({
     type : "list"
 });
 
-
+//Question10
 if (asking_question10.question10 ===chalk.yellow("b) COMPLETE")) {
     console.log(chalk.green("CORRECT ANS"));
     correct_ans++
