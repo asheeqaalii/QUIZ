@@ -3,7 +3,7 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
-console.log(chalk.magentaBright("\n\tiLET'S SEE HOW SMART UR"));
+console.log(chalk.magentaBright("\n\tLET'S SEE HOW SMART UR"));
 
 
 let correct_ans = 0; 

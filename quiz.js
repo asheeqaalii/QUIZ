@@ -6,16 +6,17 @@ let correct_ans = 0;
 //Question1
 let asking_question1 = await inquirer.prompt({
     name: "question1",
-    message: "\n1) Who is the Father of the Computer?",
+    message: "1) Who is the Father of the Computer?",
     choices: [chalk.yellow("a) CHARLES BABBAGE"), chalk.yellow("b) THOMAS EDISON"), chalk.yellow("c) ISAAC NEWTON")],
     type: "list"
 });
-// if (asking_question1.question1 ===chalk.yellow("a) CHARLES BABBAGE") ) {
-//     console.log(chalk.green("CORRECT ANS"));
-//     correct_ans++
-// }else{
-//     console.log(chalk.red("WRONG ANS!!"));
-// }
+if (asking_question1.question1 === chalk.yellow("a) CHARLES BABBAGE")) {
+    console.log(chalk.green("CORRECT ANS"));
+    correct_ans++;
+}
+else {
+    console.log(chalk.red("WRONG ANS!!"));
+}
 //Question2
 let asking_question2 = await inquirer.prompt({
     name: "question2",
@@ -86,6 +87,7 @@ if (asking_question6.question6 === chalk.yellow("a) MS EXCEL")) {
 else {
     console.log(chalk.red("WRONG ANS!!"));
 }
+//Question7
 let asking_question7 = await inquirer.prompt({
     name: "question7",
     message: "\n7) How much is a byte equal to?",
