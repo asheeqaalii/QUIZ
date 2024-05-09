@@ -1,7 +1,7 @@
 #!user/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-console.log(chalk.magentaBright("LET'S SEE HOW SMART UR"));
+console.log(chalk.magentaBright("\n\tiLET'S SEE HOW SMART UR"));
 let correct_ans = 0;
 //Question1
 let asking_question1 = await inquirer.prompt({
@@ -10,13 +10,12 @@ let asking_question1 = await inquirer.prompt({
     choices: [chalk.yellow("a) CHARLES BABBAGE"), chalk.yellow("b) THOMAS EDISON"), chalk.yellow("c) ISAAC NEWTON")],
     type: "list"
 });
-if (asking_question1.question1 === chalk.yellow("a) CHARLES BABBAGE")) {
-    console.log(chalk.green("CORRECT ANS"));
-    correct_ans++;
-}
-else {
-    console.log(chalk.red("WRONG ANS!!"));
-}
+// if (asking_question1.question1 ===chalk.yellow("a) CHARLES BABBAGE") ) {
+//     console.log(chalk.green("CORRECT ANS"));
+//     correct_ans++
+// }else{
+//     console.log(chalk.red("WRONG ANS!!"));
+// }
 //Question2
 let asking_question2 = await inquirer.prompt({
     name: "question2",
@@ -134,6 +133,7 @@ let asking_question10 = await inquirer.prompt({
     choices: [chalk.yellow("a) PROCESSED"), chalk.yellow("b) COMPLETE"), chalk.yellow("c) OUTDATED")],
     type: "list"
 });
+//Question10
 if (asking_question10.question10 === chalk.yellow("b) COMPLETE")) {
     console.log(chalk.green("CORRECT ANS"));
     correct_ans++;

@@ -3,10 +3,10 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
-console.log(chalk.magentaBright("LET'S SEE HOW SMART UR"));
+console.log(chalk.magentaBright("\n\tiLET'S SEE HOW SMART UR"));
 
 
-let correct_ans = 0;
+let correct_ans = 0; 
 
 //Question1
 let asking_question1 = await inquirer.prompt({
@@ -102,7 +102,7 @@ if (asking_question6.question6 ===chalk.yellow("a) MS EXCEL")) {
     console.log(chalk.red("WRONG ANS!!"));
 }
 
-
+//Question7
 let asking_question7 = await inquirer.prompt({
     name : "question7",
     message : "\n7) How much is a byte equal to?",
