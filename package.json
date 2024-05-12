@@ -1,9 +1,10 @@
 {
-  "name": "quiz_by_ashi",
-  "version": "1.0.0",
+  "name": "quiz_by_ashii",
+  "version": "1.0.1",
   "description": "",
   "main": "game.js",
   "type": "module",
+  "bin": "quiz.js",
   "publishConfig": {
     "access": "public"
   },

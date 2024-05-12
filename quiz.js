@@ -1,12 +1,12 @@
-#!user/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-console.log(chalk.magentaBright("\n\tiLET'S SEE HOW SMART UR"));
+console.log(chalk.magentaBright("\n\tLET'S SEE HOW SMART UR"));
 let correct_ans = 0;
 //Question1
 let asking_question1 = await inquirer.prompt({
     name: "question1",
-    message: "1) Who is the Father of the Computer?",
+    message: "\n1) Who is the Father of the Computer?",
     choices: [chalk.yellow("a) CHARLES BABBAGE"), chalk.yellow("b) THOMAS EDISON"), chalk.yellow("c) ISAAC NEWTON")],
     type: "list"
 });
